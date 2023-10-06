@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+:root{
+    --primary-text-color: rgb(112, 237, 112);
+    --seconday-color: #000;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    width: 100%;
+    height: 80px;
+    background-color: var(--seconday-color);
+    color: var(--primary-text-color);
+}
+
+#logo{
+    cursor: pointer;   
+}
+
+#logog h1{
+    font-weight: 400;
+}
+
+#logo img{
+    height: 30px;
+    width: 20px;
+}
+
+#navlinks a{
+    color: var(--primary-text-color);
+    font-size: 20px;
+    margin: 0 12px;
+    transition: 0.2s ease-out;
+}
+
+#navlinks .active{
+    color: #fff;
+}
+
+#navlinks a:hover{
+    color: #fff;
+}
+
+#hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    width: 100%;
+    height: 811px;
+    background-color: var(--seconday-color);
+}
+
+#leftbox h1{
+    font-size: 60px;
+    color: #fff;
+}
+
+#leftbox #green{
+    color: var(--primary-text-color);
+}
+
+#leftbox p{
+    color: #fff;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#hero-section p{
+    width: 30%;
+}
+
+#btn{
+    cursor: pointer;
+    background-color: var(--primary-text-color);
+    color: var(--seconday-color);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: 0.2s ease-out;
+}
+
+#btn:hover{
+    box-shadow: 0 0 15px var(--primary-text-color);
+}
+
+#rightbox img{
+    width: 400px;
+    height: 400px;
+}
+
+#content-section{
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--seconday-color);
+}
+
+#content-section h1{
+    margin-top: 1%;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+}
+
+#contentbox{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 45px;
+    margin-top: 5%;
+    width: 60%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#cardbox{
+    width: 12%;
+    height: 100%;
+    background-color: var(--primary-text-color);
+    border-radius: 15px;
+}
+
+#contentbox h4{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    top: 10px;
+    left: 0;
+}
+
+#cardbox{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#dbtn{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+}
+
+#dbtn:hover{
+    box-shadow: 0 0 12px #fff;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    height: 60px;
+    margin-top: 1px;
+    background-color: var(--primary-text-color);
+}
+
+footer i{
+    font-size: 20px;
+    color: var(--seconday-color);
+}
+
+footer a{
+    font-size: 20px;
+    color: var(--seconday-color);
+}
+
+footer i:hover{
+    color: #fff;
+}
+
+footer a:hover{
+    color: #fff;
+}
+
+/* Media Quiries */
+
+@media(max-width:415px){
+    #navlinks ul li{
+        display: flex;
+        flex-direction: row;
+        width: 70px;
+        margin-right: 80px;
+    }
+
+    #logo{
+        width: 100px;
+        margin-left: -10px;
+    }
+
+    #logo h1{
+        font-size: 15px;
+    }
+
+    #navlinks a{
+        font-size: 12px;
+    }
+
+    #hero-section{
+        position: relative;
+        width: 100%;
+        height: 715px;
+    }
+
+    #leftbox{
+        margin-bottom: 50%;
+    }
+
+    #leftbox h1{
+        font-size: 40px;
+    }
+
+    #leftbox p{
+        width: 40%;
+        font-size: 8px;
+    }
+
+    #rightbox img{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 140px;
+        left: 50%;
+    }
+
+    #contentbox{
+        width: 90%;
+        padding: 10px; 
+        border: 2px solid var(--primary-text-color); 
+        gap: 10px;  
+    }
+
+    #cardbox{
+        height: 50%;
+        width: 40%;
+        font-size: 10px;
+    }
+
+    #dbtn{
+        padding: 5px 5px;
+        font-size: 5px;
+        margin-top: 5px;
+    }
+}
+
+@media(max-width:375px){
+    #hero-section{
+        position: relative;
+        width: 100%;
+        height: 540px;
+    }
+}
+
+/* Media Quiries */
